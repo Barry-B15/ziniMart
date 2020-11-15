@@ -1,0 +1,27 @@
+7. Create Rating and Product component
+    1. create components/Rating.js
+    2. create div.rating 
+    3. style div.rating, span and last span
+    4. Create Product component
+    5. use Rating component 
+
+vid 8 . in react-router-dom
+1. cd frontend
+    nmp install react-router-dom
+    this will allow us create multiple routes
+2. Use BrowserRouter and Route for Home screen
+    In App.js, wrap the content of the 'return' in <BrowserRouter>
+    def the product route in <main>
+     <Route path="/product/:id" component={ProductScreen}></Route>
+    <Route path="/" component={HomeScreen} exact></Route>
+    the path="/" refers to the home screen, and the component to render is HomeScreen component, and exact means to run only if it is exact
+3. Create HomeScreen.js
+    In scr create a new folder 'screens' for the screens
+    Now create the HomeScreen and ProductScreen inside 'screens'
+    From App.js, cut the div with className="row center" just above <main>, paste it in HomeScreen.js 'return()
+    also cut the imports for data and Product from App.js and paste in HomeScreen.js, change the ./ to ../ as the file is ina another folder
+    import the Route, HomeScreen, and ProductScreen to App.js (short cut, delete the last leter of HomeScreen, retype it and see a suggestion for import, click it to auto import. do same for others)
+4. Add product list code there
+5. Create ProductScreen.js
+6. Add new Route from product detail to App.js
+7. Create 3 columns for product image, info and action

@@ -1,22 +1,26 @@
 import React from "react";
-import Product from "./components/Product";
-import data from './data';
+import { BrowserRouter, Route } from "react-router-dom";
+import HomeScreen from "./screens/HomeScreen";
+import ProductScreen from "./screens/ProductScreen";
+
 
 function App() {
     return ( <
+        BrowserRouter >
+        <
         div className = "grid-container" >
         <
         header className = "row" >
         <
         div className = "brand" >
         <
-        a href = "/" > torZini Mart < /a>   < /
-        div > <
+        a href = "/" > torZini Mart < /a>    <
+        /div >  <
         div className = "header-links" >
         <
-        a href = "/cart" > Cart < /a>   <
-        a href = "/signin" > Sign In < /a>   < /
-        div >
+        a href = "/cart" > Cart < /a>    <
+        a href = "/signin" > Sign In < /a>    <
+        /div >
 
         <
         /header>
@@ -24,20 +28,19 @@ function App() {
         <
         main className = "main" >
         <
-        div className = "row center" >
+        Route path = "/product/:id"
+        component = { ProductScreen } > < /Route>  <
+        Route path = "/"
+        component = { HomeScreen }
+        exact > < /Route>  
 
-        {
-            data.products.map((product) => ( <
-                Product key = { product._id }
-                product = { product } > < /Product>
-            ))
-        } <
-        /div>  < /
-        main > <
+        <
+        /main >  <
         footer className = "row center" >
         Copyright & copy; torZini 2020. All Rights Reserved <
-        /footer>  < /
-        div >
+        /footer>     <
+        /div >  <
+        /BrowserRouter>
     );
 }
 
