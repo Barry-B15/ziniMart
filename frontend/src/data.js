@@ -5,10 +5,11 @@ const data = {
             category: 'Shirts',
             image: '/images/slm1.jpg',
             price: 120,
+            countInStock: 12,
             brand: 'Zini',
             rating: 4.5,
             numReviews: 10,
-            descrition: 'high quality product'
+            description: 'high quality product',
         },
 
         {
@@ -17,10 +18,11 @@ const data = {
             category: 'Shirts',
             image: '/images/slm1.jpg',
             price: 320,
+            countInStock: 17,
             brand: 'Zini',
             rating: 4.3,
             numReviews: 10,
-            descrition: 'high quality product'
+            description: 'high quality product',
         },
 
         {
@@ -29,10 +31,11 @@ const data = {
             category: 'Shirts',
             image: '/images/slm1.jpg',
             price: 120,
+            countInStock: 0,
             brand: 'Zini',
             rating: 4.0,
             numReviews: 10,
-            descrition: 'high quality product'
+            description: 'high quality product',
         },
 
         {
@@ -41,10 +44,11 @@ const data = {
             category: 'Shirts',
             image: '/images/slm1.jpg',
             price: 120,
+            countInStock: 47,
             brand: 'Zini',
             rating: 4.5,
             numReviews: 10,
-            descrition: 'high quality product'
+            description: 'high quality product',
         },
 
         {
@@ -53,10 +57,11 @@ const data = {
             category: 'Shirts',
             image: '/images/slm1.jpg',
             price: 120,
+            countInStock: 7,
             brand: 'Zini',
             rating: 4.5,
             numReviews: 10,
-            descrition: 'high quality product'
+            description: 'high quality product',
         },
 
         {
@@ -65,10 +70,11 @@ const data = {
             category: 'Shirts',
             image: '/images/slm1.jpg',
             price: 120,
+            countInStock: 37,
             brand: 'Zini',
             rating: 4.5,
             numReviews: 10,
-            descrition: 'high quality product'
+            description: 'high quality product',
         },
 
         {
@@ -77,10 +83,11 @@ const data = {
             category: 'Shirts',
             image: '/images/slm1.jpg',
             price: 450,
+            countInStock: 10,
             brand: 'Zini',
             rating: 5.0,
             numReviews: 100,
-            descrition: 'high quality product'
+            description: 'high quality product',
         },
 
     ],

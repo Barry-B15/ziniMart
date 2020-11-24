@@ -9,8 +9,8 @@ function App() {
     <BrowserRouter>
         <div className = "grid-container">
             <header className = "row">
-                <div className = "brand">
-                    <a href = "/" > torZini Mart </a>    
+                <div >
+                    <a className = "brand" href = "/" > torZini Mart </a>    
                 </div > 
                 <div className = "header-links">
                     <a href = "/cart" > Cart </a>   
@@ -19,8 +19,9 @@ function App() {
             </header>
 
             <main className = "main">
-                <Route path = "/product/:id" component = { ProductScreen } > </Route>  
-                <Route path = "/" component = { HomeScreen } exact > </Route>  
+                <Route path = "/product/:id" component = { ProductScreen } ></Route>  
+                <Route path = "/" component = { HomeScreen } exact ></Route>  
+                {/* there should be no space btw <Route></Route> or it will not work */}
             </main >  
             <footer className = "row center">
                     Copyright & copy; torZini 2020. All Rights Reserved 
