@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 });
 
 //def a port and use it in listen
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
     console.log(`Served at http://localhost:${port}`)
